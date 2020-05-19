@@ -32,14 +32,14 @@ Things you may want to cover:
 |password|string|null: faluse
 
 ### Association
-- has_many :groups, through: :groups_users
+- has_many :groups, 
 - has_many :messages
-
+- has_many :groups_users
 ## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true
 |group_id|integer|null: false, foreign_key: true
@@ -52,12 +52,12 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|name|text|null: false|
 
 ### Association
-- belongs_to :user, through: :groups_users
+- has_many :user, through: :groups_users
 - has_many :messages
+- has_many :groups_users
 
 ## groups_usersテーブル
 
