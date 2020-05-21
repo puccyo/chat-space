@@ -1,0 +1,30 @@
+.chat-main
+  .chat-main__message-top
+    .chat-main__message-top__left-box
+      %h2.chat-main__message-top__left-box__title
+        title
+      %ul.chat-main__message-top__left-box__coment
+        Member:aaa
+    = link_to "#", class: "vvvvv" do
+      .chat-main__message-top__right-box
+        Edit
+  .chat-main__message-list
+    .chat-main__message-list__main
+      %p.chat-main_message-list__main__name
+        aaa
+      %p.chat-main__message-list__main__time
+        2020年5月21日(Thu) 11:12:09
+    %p.chat-main__message-list__coment
+      テスト
+  %form.chat-main__message-form
+    -# .chat-main__message-form__new-message
+    .new-message
+      .input-box
+        %input{type:"text", class:"input-box__text", placeholder: "type a message"}
+        %label{class:"input-box__image"}
+          =icon('far', 'image')
+          %input{type:"file", class: "input-box__image__file"}
+      %input{type: "submit", class: "btn", value:"Send"}
+    
+
+
