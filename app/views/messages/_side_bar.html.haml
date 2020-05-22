@@ -2,13 +2,13 @@
   .chat-side__username
     .chat-side__username__top-items
       %p.chat-side__username__top-items__name 
-        aaa
+        = current_user.name
       %ul.chat-side__username__top-items__box
         %li.chat-side__username__top-items__box--pen
           = link_to"#" do
             = icon('far','edit')
         %li.chat-side__username__top-items__box--gear
-          = link_to"#" do
+          = link_to edit_user_path(current_user) do
             = icon('fas','cog')
   .chat-side__group-list
     .chat-side__group-list__group
