@@ -13,15 +13,10 @@
   .chat-side__group-list
     - current_user.groups.each do |group|
       .chat-side__group-list__group
-        = link_to '#', class: "chat-side__group-list__group__name" do
+        = link_to group_messages_path(group), class: "chat-side__group-list__group__name" do
           = group.name
         .chat-side__group-list__group__coment
-          メッセージはまだありません。
+          = group.show_last_message
 
 
 
-    -# .chat-side__group-list__group
-    -#   -# %p.chat-side__group-list__group__name
-    -#   -#   test
-    -#   -# %p.chat-side__group-list__group__coment
-    -#   -#   アイウエオ
