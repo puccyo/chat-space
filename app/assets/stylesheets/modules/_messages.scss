@@ -126,25 +126,25 @@
       padding-top: 35px;
       padding-left: 40px;
       overflow: scroll;
-      &__main {
-        display: flex;
-        margin-bottom: 12px;
-        &__name {
-          color: #333333;
-          font-size: 16px;
-
+      &-tab {
+        padding-bottom: 40px;
+        &__main {
+          display: flex;
+          margin-bottom: 12px;
+          &__name {
+            color: #333333;
+            font-size: 16px;
+          }
+          &__time {
+            color: #999999;
+            font-size: 12px;
+            margin-left: 10px
+          }
         }
-        &__time {
-          color: #999999;
-          font-size: 12px;
-          margin-left: 10px
+        &__coment {
+          color: #434a54;
+          font-size: 14px;
         }
-      &__coment {
-        color: #434a54;
-        font-size: 14px;
-        padding-top: 12px;
-        padding-left: 40px;
-      }
       }
     }
     &__message-form {
