@@ -6,7 +6,7 @@ working_directory app_path
 
 pid "#{app_path}/tmp/pids/unicorn.pid"
 
-llisten "#{app_path}/tmp/sockets/unicorn.sock"
+listen "#{app_path}/tmp/sockets/unicorn.sock"
 
 stderr_path "#{app_path}/log/unicorn.stderr.log"
 
